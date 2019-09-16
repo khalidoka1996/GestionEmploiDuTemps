@@ -1,0 +1,78 @@
+#ainchock
+{
+    margin-right: 10%;
+    margin-top: 20px;
+    float: right;
+    height: 100px;
+    width: 100px;
+    
+}
+#uh2c{
+   
+    margin-left:10%;
+    margin-top: 20px;
+     height: 100px;
+    width: 100px;
+    
+}
+#topbar{
+     margin-top: 0px;
+    height:22%;
+ 
+}
+#top_div{
+margin-top:-6%;
+margin-left:15%;
+	}
+#buttons{
+	width:70%;
+	float:right;
+	margin-right:1%;
+}
+#datepick{
+    margin: auto;
+    height: 300px;
+    
+}
+
+#rechParDate{
+    width: 40%;
+    margin-left: 10%;
+}
+
+.switch{
+    margin-top: 20px;
+    height: 30px;
+    margin-left:auto;
+    margin-right: 20px;
+    float: left;
+}
+
+.select{
+    float:left;
+    width: 200px;
+    margin: auto;
+    margin-right: 2%
+}
+#afficher_button{
+  
+    margin:auto;
+    position:relative;
+    bottom:0;
+}
+#options_container{
+    margin-top: 100px;
+    width: 80%;
+    margin:auto;
+    margin-left: 20%
+}
+#login{
+	width:14%;
+	font-size:75%;
+	margin-right:15px;
+	float:right;
+	background-color:green;
+}
+#acceuil{
+	margin-left:6%;
+}

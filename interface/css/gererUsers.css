@@ -1,0 +1,65 @@
+#ainchock
+{
+    margin-right: 10%;
+    margin-top: 20px;
+    float: right;
+    height: 100px;
+    width: 100px;
+    
+}
+#uh2c{
+   
+    margin-left:10%;
+    margin-top: 20px;
+     height: 100px;
+    width: 100px;
+    
+}
+#topbar{
+     margin-top: 0px;
+    height:22%;
+}
+#top_div{
+margin-top:-6%;
+margin-left:15%;
+	}
+#buttons{
+	width:70%;
+	float:right;
+	margin-right:2%;
+}
+#logout{
+	width:14%;
+	font-size:75%;
+	
+	float:right;
+}
+#result_tab{
+	width:80%;
+	position:fixe;
+	margin-top:5%;
+	margin-left:10%;
+}
+#myTable{
+	align:center;
+}
+#Ajouter{
+	
+	margin-top:7%;
+	width:118%;
+		
+}
+
+#Ajouter_btn{
+	float:right;
+	margin-top:1%;
+	width:25%;
+	height:25%;
+}
+#recherche{
+	width:50%;
+	margin-right:0%;
+}
+tr:hover {
+	background-color: #f5f5f5;
+}

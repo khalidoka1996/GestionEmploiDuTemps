@@ -1,0 +1,95 @@
+#ainchock
+{
+    margin-right: 10%;
+    margin-top: 20px;
+    float: right;
+    height: 100px;
+    width: 100px;
+    
+}
+#uh2c{
+   
+    margin-left:10%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    
+}
+#topbar{
+     margin-top: 0px;
+    height:22%;
+}
+#top_div{
+margin-top:-6%;
+margin-left:15%;
+	}
+#buttons{
+	width:70%;
+	float:right;
+	margin-right:2%;
+}
+#switch{
+   
+    margin-top: 25px;
+    height: 30px;
+    margin-left:auto;
+    margin-right: 20px;
+    float: left;
+}
+.select{
+    float:left;
+    width: 200px;
+    margin: auto;
+    margin-right: 2%;
+    margin-top: 10;
+}
+#afficher_button{
+  
+    margin:auto;
+    margin-top:90px;
+}
+#options_container{
+    margin-top: 100px;
+    width: 80%;
+    margin:auto;
+    margin-left: 20%
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: auto;
+}
+
+td, th {
+    
+	height:75px;
+    width:85px;
+ border: 2px solid #aaaaaa !important;
+    text-align: center;
+    padding: 8px;
+}
+
+th,.jour {
+  
+    background-color: #dddddd;
+	width:12%;  
+}
+#tableau{
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+#afficheremploi{
+    margin-top: 5px;
+    float: right;
+    margin-right: 20%;
+    
+    
+}
+
+#logout{
+	width:14%;
+	font-size:75%;
+	
+	float:right;
+}

@@ -1,0 +1,550 @@
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+<script type="text/javascript" src="interface/js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="interface/css/ddata.css">
+<link rel="stylesheet" type="text/css" href="interface/css/materialize.css">
+<script type="text/javascript" src="interface/js/jquery.min.js"></script>
+<script type="text/javascript" src="interface/js/materialize.min.js"></script>
+<script type="text/javascript" src="interface/js/methods.js"></script>
+</head>
+<body>
+      <script type="text/javascript">
+         
+          $(document).ready(function() {
+    $('select').material_select();
+  });
+         </script>
+          <script type="text/javascript">
+          $('select').material_select('destroy');
+         </script>
+       <script type="text/javascript">
+          $(document).ready(function(){
+           
+       $('#ajoutermodule2,#ajoutermodule3,#ajoutermodule4,#ajoutermodule5').hide();
+        $('.mod2,.mod3,.mod4,.mod5').hide();
+              
+          $('#ajoutermodule1').click(function(){
+             
+              $('#ajoutermodule2').show();
+              $('.mod2').show();
+              $('#ajoutermodule1').hide();
+            
+              
+          });
+              
+            $('#ajoutermodule2').click(function(){
+               
+                    $('#ajoutermodule3').show();
+                 $('.mod3').show();
+              $('#ajoutermodule2').hide();
+             
+            })  ;
+              $('#ajoutermodule3').click(function(){
+              
+                    $('#ajoutermodule4').show();
+                   $('.mod4').show();
+              $('#ajoutermodule3').hide();;
+              
+            });
+              $('#ajoutermodule4').click(function(){
+              
+                     $('.mod5').show();
+              $('#ajoutermodule4').hide();
+                
+            });
+             
+            });
+           
+           
+        </script>
+        <script type=text/javascript>
+            $(document).ready(function(){
+        
+                var $switchl1=$('input[name="switchl1"]');
+                var $switchma1=$('input[name="switchma1"]');
+                var $switchme1=$('input[name="switchme1"]');
+                var $switchj1=$('input[name="switchj1"]');
+                var $switchv1=$('input[name="switchv1"]');
+                var $switchs1=$('input[name="switchs1"]');
+                
+                //les switchs de lundi 
+                $switchl1.change(function(){ if(this.checked){$('.l1').removeAttr("disabled"); }
+                   else{$('.l1').attr("disabled","disabled");};});
+                //les switch de mardi 
+                $switchma1.change(function(){ if(this.checked){$('.ma1').removeAttr("disabled"); }
+                   else{$('.ma1').attr("disabled","disabled");};});
+                   
+                //les switchs de MERCREDI
+                 $switchme1.change(function(){ if(this.checked){$('.me1').removeAttr("disabled"); }
+                   else{$('.me1').attr("disabled","disabled");} ;});
+                
+                //les  switchs de jeudi
+                $switchj1.change(function(){ if(this.checked){$('.j1').removeAttr("disabled"); }
+                   else{$('.j1').attr("disabled","disabled");};});
+                
+                //les  switchs de vendredi
+                 $switchv1.change(function(){ if(this.checked){$('.v1').removeAttr("disabled"); }
+                   else{$('.v1').attr("disabled","disabled");};});
+               
+                 //les  switchs de Samedi
+                $switchs1.change(function(){ if(this.checked){$('.s1').removeAttr("disabled"); }
+                   else{$('.s1').attr("disabled","disabled");};});
+                 
+            });
+        </script>
+    
+  
+<div id="container">
+    <div id="topbar" class="z-depth-2">
+
+<img src="interface/img/logoAinchok.jpg" class="z-depth-3" id="ainchock" >
+<img src="interface/img/logouh2c.jpg" class="z-depth-3" id="uh2c">
+    <div id='top_div'>
+       <h5 align="center" id="toptext" >DESIDERATA</h5>
+        </div>
+        
+        
+         <div id="buttons">
+         <a class="btn waves-effect z-depth-3" id="acceuil" href="index.php">Acceuil</a>     
+        <a  class="btn waves-effect z-depth-3" href='logout.php ' id='logout'> log out</a>
+        </div>
+        
+        
+</div>
+    <div  id="tablediv">
+    <table id="module1" border="5px">
+        <tr>
+        <td colspan="6"><h4>Modules Desirés:</h4></td>
+    
+        </tr>
+          <tr class="mod1">
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Cycle</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Filiere</option>
+    <option value="1">LF</option>
+    <option value="2">LP</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+            </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Module</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td> </tr>
+        <tr class="mod1">
+               <td ><p>
+      <input class="m1" type="checkbox" id="c1"   />
+      <label for="c1">Cours</label>
+    </p></td> <td><p>
+      <input class="m1" type="checkbox" id="td1"   />
+      <label for="td1">Td</label>
+    </p></td> <td><p>
+      <input class="m1" type="checkbox" id="tp1"   />
+      <label for="tp1">Tp</label>
+    </p></td>
+        <td colspan="2">
+            <div id="ajouter">
+<a id="ajoutermodule1" class="btn waves-effect z-depth-3">Ajouter moduler</a></div>
+            
+        </td>
+        </tr>
+               <tr class="mod2">
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Cycle</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Filiere</option>
+    <option value="1">LF</option>
+    <option value="2">LP</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+            </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Module</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td> </tr>
+        <tr class="mod2">
+               <td ><p>
+      <input class="m2" type="checkbox" id="c2"   />
+      <label for="c2">Cours</label>
+    </p></td> <td><p>
+      <input class="m2" type="checkbox" id="td2"   />
+      <label for="td1">Td</label>
+    </p></td> <td><p>
+      <input class="m2" type="checkbox" id="tp2"   />
+      <label for="tp2">Tp</label>
+    </p></td>
+        <td colspan="2">
+            <div id="ajouter">
+<a id="ajoutermodule2" class="btn waves-effect z-depth-3">Ajouter moduler</a></div>
+            
+        </td>
+        </tr>
+               <tr class="mod3">
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Cycle</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Filiere</option>
+    <option value="1">LF</option>
+    <option value="2">LP</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+            </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Module</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td> </tr>
+        <tr class="mod3">
+               <td ><p>
+      <input class="m3" type="checkbox" id="c3"   />
+      <label for="c3">Cours</label>
+    </p></td> <td><p>
+      <input class="m3" type="checkbox" id="td3"   />
+      <label for="td3">Td</label>
+    </p></td> <td><p>
+      <input class="m3" type="checkbox" id="tp3"   />
+      <label for="tp3">Tp</label>
+    </p></td>
+        <td colspan="2">
+            <div id="ajouter">
+<a id="ajoutermodule3" class="btn waves-effect z-depth-3">Ajouter moduler</a></div>
+            
+        </td>
+        </tr>
+               <tr class="mod4">
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Cycle</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Filiere</option>
+    <option value="1">LF</option>
+    <option value="2">LP</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+            </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Module</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td> </tr>
+        <tr class="mod4">
+               <td ><p>
+      <input class="m1" type="checkbox" id="c4"   />
+      <label for="c4">Cours</label>
+    </p></td> <td><p>
+      <input class="m4" type="checkbox" id="td4"   />
+      <label for="td4">Td</label>
+    </p></td> <td><p>
+      <input class="m4" type="checkbox" id="tp4"   />
+      <label for="tp4">Tp</label>
+    </p></td>
+        <td colspan="2">
+            <div id="ajouter">
+<a id="ajoutermodule4" class="btn waves-effect z-depth-3">Ajouter moduler</a></div>
+            
+        </td>
+        </tr>
+               <tr class="mod5">
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Cycle</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Filiere</option>
+    <option value="1">LF</option>
+    <option value="2">LP</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+            </div></td>
+        <td colspan="2">   <div class="select">
+
+  <select class="input-field col s6">
+    <option value="" disabled selected>Module</option>
+    <option value="1">Algbre</option>
+    <option value="2">Analyse</option>
+    <option value="3">Topologie</option>
+    <option value="4">Proba-Stat</option>
+  </select>
+    </div></td> </tr>
+        <tr class="mod5">
+               <td ><p>
+      <input class="m5" type="checkbox" id="c5"   />
+      <label for="c5">Cours</label>
+    </p></td> <td><p>
+      <input class="m5" type="checkbox" id="td5"   />
+      <label for="td5">Td</label>
+    </p></td> <td><p>
+      <input class="m5" type="checkbox" id="tp5"   />
+      <label for="tp5">Tp</label>
+    </p></td>
+        <td colspan="2">
+            <div id="ajouter">
+<a id="ajoutermodule5" class="btn waves-effect z-depth-3">Ajouter moduler</a></div>
+            
+        </td>
+        </tr>
+          <tr>
+        <td colspan="6"><h4>Jours et Seances Desirés:</h4></td>
+      
+        </tr>
+        <tr>
+        <td><b>Jour</b></td>
+        <td><b>Non/Oui</b></td>
+        <td><b>Seance 1</b></td>
+        <td><b>Seance 2</b></td>
+        <td><b>Seance 3</b></td>
+        <td><b>Seance 4</b></td>
+        
+        </tr>
+          <tr>
+        <td><b>Lundi</b></td>
+        <td><div id="switch" class="switch">
+    <label>
+      <input id="lever1" name="switchl1" type="checkbox">
+      <span class="lever" ></span>
+    </label></div>
+  </td>
+        <td><p>
+      <input class="l1" name="lundi" type="checkbox" id="11" disabled="disabled"/>
+      <label for="11"></label>
+    </p></td>
+        <td><p>
+      <input class="l1" type="checkbox" id="12" disabled="disabled" />
+      <label for="12"></label>
+    </p></td>
+        <td><p>
+      <input class="l1" type="checkbox" id="13" disabled="disabled" />
+      <label for="13"></label>
+    </p></td>
+        <td><p>
+      <input class="l1" type="checkbox" id="14" disabled="disabled" />
+      <label for="14"></label>
+    </p></td>
+        </tr>
+          <tr>
+        <td><b>Mardi</b></td>
+        <td><div id="switch"  class="switch">
+    <label>
+      <input name="switchma1" type="checkbox">
+      <span class="lever"></span>
+    </label></div></td>
+        <td><p>
+      <input class="ma1" type="checkbox" id="21"  disabled="disabled" />
+      <label for="21"></label>
+    </p></td>
+        <td><p>
+      <input class="ma1" type="checkbox" id="22" disabled="disabled"  />
+      <label for="22"></label>
+    </p></td>
+        <td><p>
+      <input class="ma1" type="checkbox" id="23" disabled="disabled"  />
+      <label for="23"></label>
+    </p></td>
+        <td><p>
+      <input class="ma1" type="checkbox" id="24" disabled="disabled"  />
+      <label for="24"></label>
+    </p></td>
+        </tr>
+          <tr>
+        <td><b>Mercredi</b></td>
+        <td><div id="switch"  class="switch">
+    <label>
+      <input name="switchme1" type="checkbox">
+      <span class="lever"></span>
+    </label></div></td>
+        <td><p>
+      <input class="me1" type="checkbox" id="31" disabled="disabled"  />
+      <label for="31"></label>
+    </p></td>
+        <td><p>
+      <input class="me1" type="checkbox" id="32" disabled="disabled"  />
+      <label for="32"></label>
+    </p></td>
+        <td><p>
+      <input class="me1" type="checkbox" id="33" disabled="disabled"  />
+      <label for="33"></label>
+    </p></td>
+        <td><p>
+      <input class="me1" type="checkbox" id="34" disabled="disabled"  />
+      <label for="34"></label>
+    </p></td>
+        </tr>
+          <tr>
+        <td><b>Jeudi</b></td>
+        <td><div id="switch"  class="switch">
+    <label>
+      <input name="switchj1" type="checkbox">
+      <span class="lever"></span>
+    </label></div></td>
+        <td><p>
+      <input class="j1" type="checkbox" id="41" disabled="disabled"  />
+      <label for="41"></label>
+    </p></td>
+        <td><p>
+      <input class="j1" type="checkbox" id="42" disabled="disabled"   />
+      <label for="42"></label>
+    </p></td>
+        <td><p>
+      <input class="j1" type="checkbox" id="43" disabled="disabled"  />
+      <label for="43"></label>
+    </p></td>
+        <td><p>
+      <input class="j1" type="checkbox" id="44" disabled="disabled"  />
+      <label for="44"></label>
+    </p></td>
+        </tr>
+          <tr>
+        <td><b>Vendredi</b></td>
+        <td><div id="switch"  class="switch">
+    <label>
+      <input name="switchv1" type="checkbox">
+      <span class="lever"></span>
+    </label></div></td>
+        <td><p>
+      <input class="v1" type="checkbox" id="51" disabled="disabled"  />
+      <label for="51"></label>
+    </p></td>
+        <td><p>
+      <input class="v1" type="checkbox" id="52" disabled="disabled"  />
+      <label for="52"></label>
+    </p></td>
+        <td><p>
+      <input class="v1" type="checkbox" id="53" disabled="disabled"  />
+      <label for="53"></label>
+    </p></td>
+        <td><p>
+      <input class="v1" type="checkbox" id="54" disabled="disabled"  />
+      <label for="54"></label>
+    </p></td>
+        </tr>
+          <tr>
+        <td><b>Samedi</b></td>
+        <td><div id="switch"  class="switch">
+    <label>
+      <input name="switchs1" type="checkbox">
+      <span class="lever"></span>
+    </label></div></td>
+        <td><p>
+      <input class="s1" type="checkbox" id="61" disabled="disabled"  />
+      <label for="61"></label>
+    </p></td>
+        <td><p>
+      <input class="s1" type="checkbox" id="62" disabled="disabled"  />
+      <label for="62"></label>
+            </p></td>
+        <td><p>
+      <input class="s1" type="checkbox" id="63" disabled="disabled"  />
+      <label for="63"></label>
+            </p></td>
+        <td><p>
+      <input class="s1" type="checkbox" id="64" disabled="disabled"  />
+      <label for="64"></label>
+            </p></td>
+        </tr>
+ 
+    </table>
+    </div>
+<!--section envoyer-->
+    <div id="envoyertable">
+        <table>
+         <tr>
+             <td>Priorité </td>
+             <td>
+            <p>
+      <input type="checkbox" id="Date"   />
+      <label for="Date">Date</label>
+            </p>
+    <p>
+      <input type="checkbox" id="Module"  />
+      <label for="Module">Module</label>
+            </p>
+            </td>
+          
+        <td><div id="envoyer">
+<a id="envoyer" class="btn waves-effect z-depth-3">Envoyer</a></div></td>
+        </tr>
+        </table>  
+    </div>
+  
+    </div>
+    
+ 
+</body>
+</html>

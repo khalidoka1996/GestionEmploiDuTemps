@@ -1,0 +1,37 @@
+#ainchock
+{
+    margin-right: 10%;
+    margin-top: 20px;
+    float: right;
+    height: 100px;
+    width: 100px;
+    
+}
+#uh2c{
+   
+    margin-left:10%;
+    margin-top: 20px;
+     height: 100px;
+    width: 100px;
+    
+}
+#topbar{
+     margin-top: 0px;
+    height:200px;
+}
+#logindiv{
+    margin: auto;
+    margin-top:10%;
+    height: 300px;
+    width: 350px;
+    ;}
+#passwordf{
+    width: 42%;
+    margin: auto;
+   margin-top: 3%;
+}
+#Code{
+    width: 93%;
+    margin-left: 10px;
+    
+}

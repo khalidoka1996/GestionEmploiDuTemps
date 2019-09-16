@@ -1,0 +1,64 @@
+#ainchock
+{
+    margin-right: 10%;
+    margin-top: 20px;
+    float: right;
+    height: 100px;
+    width: 100px;
+    
+}
+#uh2c{
+   
+    margin-left:10%;
+    margin-top: 20px;
+     height: 100px;
+    width: 100px;
+    
+}
+#topbar{
+     margin-top: 0px;
+    height:22%;
+}
+#top_div{
+margin-top:-6%;
+margin-left:15%;
+	}
+#buttons{
+	width:70%;
+	float:right;
+	margin-right:2%;
+}
+#switch{
+   
+    margin-top: 25px;
+    height: 30px;
+    margin-left:auto;
+    margin-right: 20px;
+    float: left;
+}
+.select{
+    float:left;
+    width: 200px;
+    margin: auto;
+    margin-right: 2%;
+    margin-top: 3%;
+}
+#afficher_button{
+  
+    margin:auto;
+    margin-top:15%;
+    padding-left:21%;
+}
+#options_container{
+    margin-top: 100px;
+    width: 80%;
+    margin:auto;
+    margin-left: 20%
+}
+#logout{
+	width:14%;
+	font-size:75%;
+	
+	float:right;
+}
+
